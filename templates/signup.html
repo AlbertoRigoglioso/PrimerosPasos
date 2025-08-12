@@ -5,5 +5,8 @@
   <input name="password" placeholder="pass" type="password">
   <button>Crear</button>
 </form>
+<form action="{{ url_for('index') }}" method="get">
+  <button type="submit">Crear</button>
+</form>
 <p><a href="/login">Login</a></p>
 </body></html>
