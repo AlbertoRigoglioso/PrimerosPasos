@@ -8,5 +8,8 @@
   <input name="password" placeholder="pass" type="password">
   <button>Entrar</button>
 </form>
+<form action="{{ url_for('index') }}" method="get">
+  <button type="submit">Volver</button>
+</form>
 <p><a href="/signup">Crear cuenta</a></p>
 {% endblock %}
