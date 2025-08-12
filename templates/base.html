@@ -1,0 +1,8 @@
+<!doctype html>
+<title>{% block title %}Mi Web{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+<body>
+  <header>Header común</header>
+  <main>{% block content %}{% endblock %}</main>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>

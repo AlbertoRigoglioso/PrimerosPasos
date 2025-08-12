@@ -1,0 +1,64 @@
+/* Reset básico: quita márgenes y rellenos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Encabezados */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+/* Párrafos */
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Enlaces */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Botones */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Caja de contenido */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}

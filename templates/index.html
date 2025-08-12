@@ -1,4 +1,15 @@
-<!doctype html><html><body>
-<h1>Index</h1>
-<p><a href="/signup">Signup</a> | <a href="/login">Login</a> | <a href="/contact">Contact</a></p>
-</body></html>
+<!-- <!doctype html><html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>    
+<body>
+    <h1>Index</h1>
+    <p><a href="/signup">Signup</a> | <a href="/login">Login</a> | <a href="/contact">Contact</a></p>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> -->
+
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}<h1>Hola Jinja</h1>{% endblock %}
