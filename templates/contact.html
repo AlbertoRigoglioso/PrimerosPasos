@@ -1,5 +1,11 @@
 <!doctype html><html><body>
+
+</body></html>
+
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block main %}
 <h1>Zona privada: Contact</h1>
 <p>Hola {{ current_user.username }}!</p>
 <p><a href="/logout">Logout</a></p>
-</body></html>
+{% endblock %}

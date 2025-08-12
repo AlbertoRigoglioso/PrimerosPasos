@@ -1,4 +1,6 @@
-<!doctype html><html><body>
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block main %}
 <h1>Login</h1>
 {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
 <form method="post">
@@ -7,4 +9,4 @@
   <button>Entrar</button>
 </form>
 <p><a href="/signup">Crear cuenta</a></p>
-</body></html>
+{% endblock %}
