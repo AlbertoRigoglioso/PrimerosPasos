@@ -9,7 +9,12 @@
 </head>
 <body>
   <div class="layout">
-    <header class="box">HEADER</header>
+    <header class="box">
+      <div class="logo-container">
+          <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+      </div>
+    </header>
+
     <!-- <nav class="box">NAV</nav> -->
     <sidebar class="box">SIDEBAR</sidebar>
     <main class="box">{% block main %}MAIN{% endblock %}</main>
