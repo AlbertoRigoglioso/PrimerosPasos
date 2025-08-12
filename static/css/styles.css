@@ -33,7 +33,13 @@ html, body { height: 100%; font-family: system-ui, sans-serif; }
     "footer  footer footer";
 }
 
-header { grid-area: header; display:flex; align-items:center; background: var(--c-header); padding: 2px; justify-content: space-between; padding-right: 20px; padding-left: 20px;}
+header { grid-area: header; align-items:center; background: var(--c-header); padding: 2px; justify-content: space-between; padding-right: 20px; padding-left: 20px;
+  display: grid;                     /* grid de 3 filas */
+  grid-template-columns: auto 500px 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas:
+    "header_c1 header_c2 header_c3";
+}
 /* nav    { grid-area: nav;    background: var(--c-nav);    padding: 16px; } */
 sidebar{ grid-area: sidebar;background: var(--c-sidebar);padding: 16px; }
 main   { grid-area: main;   background: var(--c-main);   padding: 16px; }
@@ -58,6 +64,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 .box { display: grid; place-items: center; min-height: 120px; font-weight: 700; color: #0b0d0e; }
 
 .logo-container {
+    grid-area: header_c1;
     width: 120px;            /* Tamaño fijo del div (ejemplo) */
     height: 100%;           /* La imagen ocupa todo el alto del div */
     overflow: hidden;       /* Por si la imagen es más grande */
@@ -67,4 +74,9 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
     width: 100%;            /* La imagen ocupa todo el ancho del div */
     height: 100%;           /* La imagen ocupa todo el alto del div */
     object-fit: contain;    /* Escala sin deformar, mantiene proporción */
+}
+
+.login_case{
+  grid-area:header_c3;
+  background:white;
 }
