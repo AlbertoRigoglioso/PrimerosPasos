@@ -11,7 +11,7 @@
 * { box-sizing: border-box; margin: 0; }
 html, body { height: 100%; font-family: system-ui, sans-serif; }
 
-.layout {
+.layout { /*LAYOUT CON NAV*/
   min-height: 100vh;                 /* rellenar la ventana */
   display: grid;                     /* grid de 3 filas */
   grid-template-columns: 300px 1fr auto;  /* contenido + sidebar */
@@ -22,18 +22,18 @@ html, body { height: 100%; font-family: system-ui, sans-serif; }
     "sidebar main   aside"
     "footer  footer footer";
 }
-.layout {
+.layout { /*LAYOUT SIN NAV*/
   min-height: 100vh;                 /* rellenar la ventana */
   display: grid;                     /* grid de 3 filas */
   grid-template-columns: 300px 1fr auto;  /* contenido + sidebar */
-  grid-template-rows: auto 1fr auto; /* header, nav, contenido, footer */
+  grid-template-rows: auto 1fr auto; /* header, contenido, footer */
   grid-template-areas:
     "header  header header"
     "sidebar main   aside"
     "footer  footer footer";
 }
 
-header { grid-area: header; display:flex; align-items:center; background: var(--c-header); padding: 16px; }
+header { grid-area: header; display:flex; align-items:center; background: var(--c-header); padding: 16px; justify-content: flex-start; }
 /* nav    { grid-area: nav;    background: var(--c-nav);    padding: 16px; } */
 sidebar{ grid-area: sidebar;background: var(--c-sidebar);padding: 16px; }
 main   { grid-area: main;   background: var(--c-main);   padding: 16px; }
