@@ -1,8 +1,21 @@
 <!doctype html>
-<title>{% block title %}Mi Web{% endblock %}</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Layout mínimo — colores por elemento{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
 <body>
-  <header>Header común</header>
-  <main>{% block content %}{% endblock %}</main>
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <div class="layout">
+    <header class="box">HEADER</header>
+    <nav class="box">NAV</nav>
+    <sidebar class="box">SIDEBAR</sidebar>
+    <main class="box">{% block content %}MAIN{% endblock %}</main>
+    <aside class="box">ASIDE</aside>
+    <footer class="box">FOOTER</footer>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
+</html>

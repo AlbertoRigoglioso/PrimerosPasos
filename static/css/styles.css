@@ -1,64 +1,49 @@
-/* Reset básico: quita márgenes y rellenos por defecto */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Layout muy simple con CSS Grid y colores sólidos por elemento */
+:root {
+  --c-header: #ff6b6b;
+  --c-nav: #ffd166;
+  --c-main: #06d6a0;
+  --c-aside: #4cc9f0;
+  --c-footer: #bdb2ff;
+  --c-sidebar: #53c6b8;
 }
 
-/* Estilo general del cuerpo */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 20px;
+* { box-sizing: border-box; margin: 0; }
+html, body { height: 100%; font-family: system-ui, sans-serif; }
+
+.layout {
+  min-height: 100vh;                 /* rellenar la ventana */
+  display: grid;                     /* grid de 3 filas */
+  grid-template-columns: 300px 1fr auto;  /* contenido + sidebar */
+  grid-template-rows: auto auto 1fr auto; /* header, nav, contenido, footer */
+  grid-template-areas:
+    "header  header header"
+    "nav     nav    nav"
+    "sidebar main   aside"
+    "footer  footer footer";
 }
 
-/* Encabezados */
-h1 {
-  color: #2c3e50;
-  margin-bottom: 10px;
+header { grid-area: header; background: var(--c-header); padding: 16px; }
+nav    { grid-area: nav;    background: var(--c-nav);    padding: 16px; }
+sidebar{ grid-area: sidebar;background: var(--c-sidebar);padding: 16px; }
+main   { grid-area: main;   background: var(--c-main);   padding: 16px; }
+aside  { grid-area: aside;  background: var(--c-aside);  padding: 16px; }
+footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
+
+/* Responsive: apilar en una columna en pantallas estrechas */
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "sidebar"
+      "main"
+      "aside"
+      "footer";
+  }
 }
 
-h2 {
-  color: #34495e;
-  margin-bottom: 8px;
-}
-
-/* Párrafos */
-p {
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-
-/* Enlaces */
-a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Botones */
-button {
-  background-color: #3498db;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #2980b9;
-}
-
-/* Caja de contenido */
-.container {
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-}
+/* Solo para que el texto se vea centrado y claro */
+.box { display: grid; place-items: center; min-height: 120px; font-weight: 700; color: #0b0d0e; }
