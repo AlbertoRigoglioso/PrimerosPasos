@@ -26,7 +26,7 @@ html, body { height: 100%; font-family: system-ui, sans-serif; }
   min-height: 100vh;                 /* rellenar la ventana */
   display: grid;                     /* grid de 3 filas */
   grid-template-columns: 300px 1fr auto;  /* contenido + sidebar */
-  grid-template-rows: auto 1fr auto; /* header, contenido, footer */
+  grid-template-rows: 70px 1fr auto; /* header, contenido, footer */
   grid-template-areas:
     "header  header header"
     "sidebar main   aside"
@@ -68,6 +68,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
     width: 120px;            /* Tamaño fijo del div (ejemplo) */
     height: 100%;           /* La imagen ocupa todo el alto del div */
     overflow: hidden;       /* Por si la imagen es más grande */
+    margin-left: 20px;
 }
 
 .logo-container img {
@@ -85,5 +86,5 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 .header_c2{
   grid-area:header_c2;
   background: #4cc9f0;
-  height: 100px;    
+  height: 100%;    
 }
