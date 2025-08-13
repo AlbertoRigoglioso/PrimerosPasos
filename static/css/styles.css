@@ -79,4 +79,11 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 .login_case{
   grid-area:header_c3;
   background:white;
+  height: 100%;    
+}
+
+.header_c2{
+  grid-area:header_c2;
+  background: #4cc9f0;
+  height: 100px;    
 }
