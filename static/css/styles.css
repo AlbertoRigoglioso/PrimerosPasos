@@ -42,7 +42,7 @@ header { grid-area: header; align-items:center; background: var(--c-header); pad
 }
 /* nav    { grid-area: nav;    background: var(--c-nav);    padding: 16px; } */
 sidebar{ grid-area: sidebar;background: var(--c-sidebar);padding: 16px; }
-main   { grid-area: main;   background: var(--c-main);   padding: 16px; }
+main   { grid-area: main;   background: var(--c-main);   padding: 16px; overflow-y: auto;}
 aside  { grid-area: aside;  background: var(--c-aside);  padding: 16px; }
 footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 
