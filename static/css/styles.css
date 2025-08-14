@@ -88,8 +88,9 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   display: flex;               /* activa flexbox */
   align-items: center;         /* centra verticalmente */
   justify-content: center;
-  width: 50%;  /* la mitad del ancho del padre */
-  height: 80%; /* 30% de la altura del padre */  
+  width: 60%;  /* la mitad del ancho del padre */
+  height: 80%; /* 30% de la altura del padre */
+  background: red;  
 }
 
 .login_case{
@@ -98,6 +99,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 }
 
 .signup_case{
-  background-color: white;
+  background: white;
   border-radius: 4px;
+  text-decoration: none; /* quita subrayado */  
 }
