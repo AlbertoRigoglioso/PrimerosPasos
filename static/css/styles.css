@@ -79,7 +79,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 
 .login_case{
   grid-area:header_c3;
-  /* background:white; */
+  background:white;
   height: 100%;  
   border-radius: 15px;
   display: flex;               /* activa flexbox */
