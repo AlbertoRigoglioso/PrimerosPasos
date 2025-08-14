@@ -80,7 +80,10 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 .login_case{
   grid-area:header_c3;
   background:white;
-  height: 100%;    
+  height: 100%;  
+  border-radius: 15px;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */  
 }
 
 .header_c2{
