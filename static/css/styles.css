@@ -88,8 +88,9 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   display: flex;               /* activa flexbox */
   align-items: center;         /* centra verticalmente */
   justify-content: center;
-  width: 80%;  /* la mitad del ancho del padre */
-  height: 80%; /* 30% de la altura del padre */
+  gap: 10px;
+  width: 80%;  /* % del ancho del padre */
+  height: 100%; /* % de la altura del padre */
   background: red;  
 }
 
@@ -101,5 +102,6 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 .signup_case{
   background: white;
   border-radius: 4px;
+  height: 80%;
   text-decoration: none; /* quita subrayado */  
 }
