@@ -88,7 +88,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   display: flex;               /* activa flexbox */
   align-items: center;         /* centra verticalmente */
   justify-content: center;
-  width: 60%;  /* la mitad del ancho del padre */
+  width: 80%;  /* la mitad del ancho del padre */
   height: 80%; /* 30% de la altura del padre */
   background: red;  
 }
