@@ -92,7 +92,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   gap: 25px;
   width: 100%;  /* % del ancho del padre */
   height: 100%; /* % de la altura del padre */
-  background: red;  
+  /* background: red;   */
 }
 
 .login_case{
@@ -108,5 +108,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   text-decoration: none; /* quita subrayado */
   display: flex;          
   align-items: center;    /* Centrar verticalmente */
-  color: var(--c-corporate);  
+  color: var(--c-corporate);
+  font-size: 16px; /* valor que quieras como base */
+  
 }
