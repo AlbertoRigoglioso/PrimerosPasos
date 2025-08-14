@@ -101,7 +101,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 }
 
 .signup_case{
-  background: white;
+  background-color: white;
   border-radius: 4px;
   height: 60%;
   padding: 10px;
@@ -110,5 +110,9 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   align-items: center;    /* Centrar verticalmente */
   color: var(--c-corporate);
   font-size: 16px; /* valor que quieras como base */
-  
+  transition: background-color 0.3s ease; /* suave */
+}
+
+.signup_case:hover {
+  background-color: #d7d7d7; /* tono más oscuro */
 }
