@@ -78,19 +78,26 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
     object-fit: contain;    /* Escala sin deformar, mantiene proporción */
 }
 
-.login_case{
-  grid-area:header_c3;
-  color:white;
-  display: flex;               /* activa flexbox */
-  align-items: center;         /* centra verticalmente */
-  justify-content: center;
-  width: 50%;  /* la mitad del ancho del padre */
-  height: 80%; /* 30% de la altura del padre */  
-  text-decoration: none; /* quita subrayado */  
-}
 
 .header_c2{
   grid-area:header_c2;
   height: 100%;    
 }
 
+.header_c3{
+  display: flex;               /* activa flexbox */
+  align-items: center;         /* centra verticalmente */
+  justify-content: center;
+  width: 50%;  /* la mitad del ancho del padre */
+  height: 80%; /* 30% de la altura del padre */  
+}
+
+.login_case{
+  color:white;
+  text-decoration: none; /* quita subrayado */  
+}
+
+.signup_case{
+  background-color: white;
+  border-radius: 4px;
+}
