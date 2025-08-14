@@ -6,6 +6,7 @@
   --c-aside: #4cc9f0;
   --c-footer: #bdb2ff;
   --c-sidebar: #53c6b8;
+  --color-texto: #222;
 }
 
 * { box-sizing: border-box; margin: 0; }
@@ -79,7 +80,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 
 .login_case{
   grid-area:header_c3;
-  background:white;
+  color:white;
   height: 100%;  
   border-radius: 15px;
   display: flex;               /* activa flexbox */
@@ -87,6 +88,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   justify-content: center;
   width: 50%;  /* la mitad del ancho del padre */
   height: 80%; /* 30% de la altura del padre */  
+  
 }
 
 .header_c2{
@@ -94,3 +96,4 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   background: #4cc9f0;
   height: 100%;    
 }
+
