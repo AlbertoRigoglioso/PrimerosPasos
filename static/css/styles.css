@@ -1,5 +1,6 @@
 /* Layout muy simple con CSS Grid y colores sólidos por elemento */
 :root {
+  --c-corporate:#224C3F; 
   --c-header: #224C3F;
   --c-nav: #ffd166;
   --c-main: #06d6a0;
@@ -36,7 +37,7 @@ html, body { height: 100%; font-family: system-ui, sans-serif; }
 
 header { grid-area: header; align-items:center; background: var(--c-header); padding: 2px; justify-content: space-between; padding-right: 20px; padding-left: 20px;
   display: grid;                     /* grid de 3 filas */
-  grid-template-columns: auto 1fr 300px;
+  grid-template-columns: auto 1fr 250px;
   grid-template-rows: 100%;
   grid-template-areas:
     "header_c1 header_c2 header_c3";
@@ -88,7 +89,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   display: flex;               /* activa flexbox */
   align-items: center;         /* centra verticalmente */
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
   width: 100%;  /* % del ancho del padre */
   height: 100%; /* % de la altura del padre */
   background: red;  
@@ -106,5 +107,6 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   padding: 10px;
   text-decoration: none; /* quita subrayado */
   display: flex;          
-  align-items: center;    /* Centrar verticalmente */  
+  align-items: center;    /* Centrar verticalmente */
+  color: var(--c-corporate);  
 }
