@@ -82,8 +82,9 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   /* background:white; */
   height: 100%;  
   border-radius: 15px;
-  text-align: center; 
-}
+  display: flex;               /* activa flexbox */
+  align-items: center;         /* centra verticalmente */
+  justify-content: center;}
 
 .header_c2{
   grid-area:header_c2;
