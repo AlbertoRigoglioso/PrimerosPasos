@@ -36,7 +36,7 @@ html, body { height: 100%; font-family: system-ui, sans-serif; }
 
 header { grid-area: header; align-items:center; background: var(--c-header); padding: 2px; justify-content: space-between; padding-right: 20px; padding-left: 20px;
   display: grid;                     /* grid de 3 filas */
-  grid-template-columns: auto 1fr 400px;
+  grid-template-columns: auto 1fr 300px;
   grid-template-rows: 100%;
   grid-template-areas:
     "header_c1 header_c2 header_c3";
@@ -81,19 +81,16 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 .login_case{
   grid-area:header_c3;
   color:white;
-  height: 100%;  
-  border-radius: 15px;
   display: flex;               /* activa flexbox */
   align-items: center;         /* centra verticalmente */
   justify-content: center;
   width: 50%;  /* la mitad del ancho del padre */
   height: 80%; /* 30% de la altura del padre */  
-  
+  text-decoration: none; /* quita subrayado */  
 }
 
 .header_c2{
   grid-area:header_c2;
-  background: #4cc9f0;
   height: 100%;    
 }
 
