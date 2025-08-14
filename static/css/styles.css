@@ -84,7 +84,8 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
   border-radius: 15px;
   display: flex;               /* activa flexbox */
   align-items: center;         /* centra verticalmente */
-  justify-content: center;}
+  justify-content: center;
+  margin: 20px;}
 
 .header_c2{
   grid-area:header_c2;
