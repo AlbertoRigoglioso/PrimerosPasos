@@ -42,6 +42,8 @@ header { grid-area: header; align-items:center; background: var(--c-corporate); 
   grid-template-areas:
     "header_c1 header_c2 header_c3";
   border-color: white;
+  border-style: solid; /* Define el estilo del borde */
+  border-width: 1px; 
 }
 nav    { grid-area: nav;    background: var(--c-corporate);    padding: 16px; 
 border-color: white;}
