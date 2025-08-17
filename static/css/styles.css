@@ -1,6 +1,6 @@
 /* Layout muy simple con CSS Grid y colores sólidos por elemento */
 :root {
-  --c-corporate:#224C3F; 
+  --c-corporate:#224c3f; 
   --c-header: #224C3F;
   --c-nav: #ffd166;
   --c-main: #06d6a0;
@@ -41,7 +41,7 @@ header { grid-area: header; align-items:center; background: var(--c-corporate); 
   grid-template-rows: 100%;
   grid-template-areas:
     "header_c1 header_c2 header_c3";
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #cffff0;
 }
 nav    { grid-area: nav;    background: var(--c-corporate);    padding: 16px; 
 border-color: white;}
