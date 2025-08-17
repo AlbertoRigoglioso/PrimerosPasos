@@ -48,6 +48,13 @@ main   { grid-area: main;   background: var(--c-main);   padding: 16px; overflow
 aside  { grid-area: aside;  background: var(--c-aside);  padding: 16px; }
 footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
 
+/*Corregido al blanco*/
+
+sidebar{ grid-area: sidebar;background: white;padding: 16px; }
+main   { grid-area: main;   background: white;   padding: 16px; overflow-y: auto;}
+aside  { grid-area: aside;  background: white;  padding: 16px; }
+footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
+
 /* Responsive: apilar en una columna en pantallas estrechas */
 @media (max-width: 800px) {
   .layout {
@@ -61,7 +68,7 @@ footer { grid-area: footer; background: var(--c-footer); padding: 16px; }
       "footer";
   }
 }
-
+var
 /* Solo para que el texto se vea centrado y claro */
 .box { display: grid; place-items: center; min-height: 120px; font-weight: 700; color: #0b0d0e; }
 
