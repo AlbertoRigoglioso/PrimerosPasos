@@ -17,7 +17,7 @@ html, body { height: 100%; font-family: system-ui, sans-serif; }
   min-height: 100vh;                 /* rellenar la ventana */
   display: grid;                     /* grid de 3 filas */
   grid-template-columns: 300px 1fr auto;  /* contenido + sidebar */
-  grid-template-rows: 50px 40px 1fr auto; /* header, nav, contenido, footer */
+  grid-template-rows: 70px 40px 1fr auto; /* header, nav, contenido, footer */
   grid-template-areas:
     "header  header header"
     "nav     nav    nav"
