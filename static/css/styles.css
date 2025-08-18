@@ -44,7 +44,11 @@ header { grid-area: header; align-items:center; background: var(--c-corporate); 
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 nav    { grid-area: nav;    background: var(--c-corporate);    padding: 16px; 
-border-color: white;}
+  border-color: white;
+  display: flex;
+  justify-content: flex-start; /* fuerza a que empiecen desde la izquierda */
+  align-items: center;         /* opcional: los centra verticalmente */
+  gap: 10px;}
 sidebar{ grid-area: sidebar;background: var(--c-sidebar);padding: 16px; }
 main   { grid-area: main;   background: var(--c-main);   padding: 16px; overflow-y: auto;}
 aside  { grid-area: aside;  background: var(--c-aside);  padding: 16px; }

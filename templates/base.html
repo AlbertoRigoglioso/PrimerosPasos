@@ -20,7 +20,14 @@
 
     </header>
 
-    <nav class="box">NAV</nav>
+    <nav class="box">
+      <button class="menu-btn">Menú ▼</button><button class="menu-btn">Proyectos</button>
+      <div class="menu-content">
+        <a href="/inicio">Inicio</a>
+        <a href="/servicios">Servicios</a>
+        <a href="/contacto">Contacto</a>
+      </div>
+    </nav>
     <sidebar class="box">SIDEBAR</sidebar>
     <main class="box">{% block main %}MAIN{% endblock %}</main>
     <aside class="box">ASIDE</aside>
